@@ -3,36 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jagtap Classes</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f6f9; color: #333; }
-        header { background-color: #1a365d; color: white; padding: 2rem; text-align: center; }
-        main { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
-        .card { background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 1.5rem; }
-        footer { text-align: center; padding: 1rem; background: #e2e8f0; font-size: 0.9rem; }
-    </style>
+    <title>Jagtap Classes | Mathematics Coaching by Rajan Jagtap</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0f172a',
+                        gold: '#d97706',
+                        brandBlue: '#1e3a8a',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-    <header>
-        <h1>Welcome to Jagtap Classes</h1>
-        <p>Quality Education & Technical Training</p>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- Header / Navigation -->
+    <header class="bg-navy text-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div>
+                <a href="#" class="text-2xl font-bold tracking-tight text-white flex items-center gap-2">
+                    <span>JAGTAP CLASSES</span>
+                </a>
+                <span class="text-xs text-amber-400 block font-semibold tracking-widest uppercase">Est. 1980 • Mathematics by Rajan Jagtap</span>
+            </div>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="#about" class="hover:text-amber-400 transition">About</a>
+                <a href="#courses" class="hover:text-amber-400 transition">Programs</a>
+                <a href="#campus" class="hover:text-amber-400 transition">Campus</a>
+                <a href="#contact" class="bg-amber-500 hover:bg-amber-600 text-slate-900 px-4 py-2 rounded-lg font-semibold transition">Visit Us</a>
+            </nav>
+        </div>
     </header>
-    <main>
-        <div class="card">
-            <h2>About Us</h2>
-            <p>Welcome to Jagtap Classes! We provide comprehensive learning modules designed to help students master core technical skills.</p>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-navy via-slate-900 to-brandBlue text-white py-20 px-4 text-center relative overflow-hidden">
+        <div class="max-w-4xl mx-auto relative z-10">
+            <span class="inline-block bg-amber-500/20 text-amber-300 border border-amber-500/30 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">
+                Golden Jubilee Horizon: 1980 – 2030
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-4">
+                Mathematics Classes by Rajan Jagtap
+            </h1>
+            <p class="text-lg md:text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
+                Building unbeatable mathematical foundations and academic excellence in Solapur for nearly 50 years.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contact" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-8 py-3.5 rounded-lg text-lg shadow-lg transition">Campus Address & Contact</a>
+                <a href="#courses" class="bg-slate-800 hover:bg-slate-700 text-white font-semibold px-8 py-3.5 rounded-lg text-lg border border-slate-700 transition">Explore Courses</a>
+            </div>
         </div>
-        <div class="card">
-            <h2>Our Courses</h2>
-            <ul>
-                <li>Python & Automation Engineering</li>
-                <li>Software Testing & QA Mastery</li>
-                <li>Web Development Fundamentals</li>
-            </ul>
+    </section>
+
+    <!-- Key Stats Banner -->
+    <section class="bg-white border-b border-slate-200 py-10">
+        <div class="max-w-5xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div>
+                <p class="text-3xl md:text-4xl font-extrabold text-brandBlue">1980</p>
+                <p class="text-sm text-slate-600 font-medium">Established</p>
+            </div>
+            <div>
+                <p class="text-3xl md:text-4xl font-extrabold text-brandBlue">50 Yrs</p>
+                <p class="text-sm text-slate-600 font-medium">Legacy (1980-2030)</p>
+            </div>
+            <div>
+                <p class="text-3xl md:text-4xl font-extrabold text-brandBlue">Solapur</p>
+                <p class="text-sm text-slate-600 font-medium">Maharashtra</p>
+            </div>
+            <div>
+                <p class="text-3xl md:text-4xl font-extrabold text-brandBlue">100%</p>
+                <p class="text-sm text-slate-600 font-medium">Conceptual Focus</p>
+            </div>
         </div>
-    </main>
-    <footer>
-        &copy; 2026 Jagtap Classes. All rights reserved.
+    </section>
+
+    <!-- Campus & Legacy Section -->
+    <section id="campus" class="py-16 px-4 max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-200">
+                <img src="building.jpg" alt="Jagtap Classes Main Campus Building, Solapur" class="w-full h-auto object-cover">
+                <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950/80 to-transparent p-6 text-white">
+                    <p class="font-bold text-lg">Jagtap Classes Campus</p>
+                    <p class="text-xs text-slate-300">South Sadar Bazar, Lashkar, Solapur</p>
+                </div>
+            </div>
+            <div>
+                <span class="text-amber-600 font-bold uppercase tracking-wider text-sm">Our Heritage</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-navy mt-2 mb-4">Five Decades of Mathematical Excellence</h2>
+                <p class="text-slate-600 mb-4 leading-relaxed">
+                    Founded in 1980 under the guidance of <strong>Rajan Jagtap</strong>, Jagtap Classes has stood as a premier educational institute in Solapur. For nearly half a century, we have simplified complex mathematical concepts and prepared generations of students for academic success.
+                </p>
+                <p class="text-slate-600 mb-6 leading-relaxed">
+                    As we march toward our 50-year milestone (1980–2030), our Solapur campus continues to foster problem-solving skills, analytical rigor, and core conceptual clarity.
+                </p>
+                <div class="border-l-4 border-amber-500 pl-4 py-2 italic text-slate-700 bg-amber-50/50 rounded-r-lg">
+                    "Transforming mathematical learning into logical mastery since 1980."
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Offered -->
+    <section id="courses" class="bg-slate-100 py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="text-amber-600 font-bold uppercase tracking-wider text-sm">Academic Programs</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-navy mt-1">Specialized Coaching</h2>
+                <p class="text-slate-600 mt-2">Comprehensive learning modules tailored for mathematical and logical precision.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-md p-6 border border-slate-200 hover:shadow-xl transition">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-lg flex items-center justify-center font-bold text-xl mb-4">01</div>
+                    <h3 class="text-xl font-bold text-navy mb-2">Core Mathematics</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Step-by-step coaching focusing on fundamental arithmetic, algebra, geometry, and problem-solving techniques.
+                    </p>
+                    <span class="text-xs font-semibold bg-slate-100 text-slate-700 px-3 py-1 rounded-full">School & Board Prep</span>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-6 border border-slate-200 hover:shadow-xl transition">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-lg flex items-center justify-center font-bold text-xl mb-4">02</div>
+                    <h3 class="text-xl font-bold text-navy mb-2">Advanced Mathematics</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        In-depth coverage of trigonometry, calculus, analytical geometry, and competitive exam preparation.
+                    </p>
+                    <span class="text-xs font-semibold bg-slate-100 text-slate-700 px-3 py-1 rounded-full">Higher Secondary</span>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-6 border border-slate-200 hover:shadow-xl transition">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-lg flex items-center justify-center font-bold text-xl mb-4">03</div>
+                    <h3 class="text-xl font-bold text-navy mb-2">Logical Reasoning & Aptitude</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Analytical thinking modules designed to build mental agility, quick problem solving, and exam confidence.
+                    </p>
+                    <span class="text-xs font-semibold bg-slate-100 text-slate-700 px-3 py-1 rounded-full">Skill Building</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Contact Section -->
+    <section id="contact" class="py-16 px-4 max-w-4xl mx-auto">
+        <div class="bg-navy text-white rounded-2xl p-8 md:p-12 shadow-xl text-center">
+            <span class="text-amber-400 text-sm font-semibold tracking-wider uppercase">Contact & Campus Location</span>
+            <h2 class="text-3xl font-bold mt-2 mb-6">Jagtap Classes, Solapur</h2>
+            
+            <div class="bg-slate-800/80 border border-slate-700 rounded-xl p-6 mb-8 text-left max-w-2xl mx-auto">
+                <p class="text-amber-400 font-bold mb-1 text-lg">Mathematics Classes by Rajan Jagtap</p>
+                <p class="text-slate-200 text-sm md:text-base leading-relaxed">
+                    2008/6, Jagtap Classes,<br>
+                    South Sadar Bazar, Gandhi Nagar,<br>
+                    Lashkar, Solapur, Maharashtra 413003, India.
+                </p>
+            </div>
+
+            <p class="text-slate-300 mb-6 text-sm">
+                Visit our center in Lashkar, Solapur to inquire about current batch timings and admissions.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-8 text-center text-sm border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <p class="mb-2">&copy; 1980 – 2026 Jagtap Classes. All rights reserved.</p>
+            <p class="text-xs text-slate-500">Celebrating 50 Years of Educational Excellence (1980–2030) • Solapur, Maharashtra</p>
+        </div>
     </footer>
+
 </body>
 </html>
